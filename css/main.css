@@ -359,7 +359,7 @@ a:not([href]):not([tabindex]):hover {
   padding: 15px;
   border-radius: 4px;
   margin-bottom: 15px;
-  webkit-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
@@ -372,7 +372,6 @@ a:not([href]):not([tabindex]):hover {
   border-radius: 5px;
   margin-top: 10px;
   margin-bottom: 15px;
-  webkit-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -778,6 +777,7 @@ a:not([href]):not([tabindex]):hover {
    ========================================================================== */
 .counters {
   background: url(../img/bg1.jpg) no-repeat fixed;
+  background-size: cover;
   position: relative;
 }
 .counters .facts-item {
@@ -800,6 +800,98 @@ a:not([href]):not([tabindex]):hover {
   font-size: 20px;
   color: #fff;
 }
+
+/* ==========================================================================
+   Project Section
+   ========================================================================== */
+
+#project-details .project {
+  box-shadow: 0 0 12px #F4F4F4;
+  line-height: 22px;
+  margin-top: 30px;
+  border-radius: 3px;
+  background-color: #fff;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  position: relative;
+  top: 0;
+}
+
+#project-details .project:hover {
+  box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
+}
+
+#project-details .project .project-images {
+  width: 100%;
+  height: 100%;
+  background: rgba(245, 125, 65, 1);
+  padding: 20px;
+}
+
+/* Portfolio Image Grid */
+
+#project-details .project .project-images .project-row {
+  -ms-display: flex; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+#project-details .project .project-images .project-row .project-column {
+  -ms-flex: 33.33333%; /* IE10 */
+  flex: 33.33333%;
+  max-width: 33.33333%;
+  padding: 0 4px;
+}
+
+#project-details .project .project-images .project-row .project-column img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+#project-details .project .project-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 20px;
+}
+#project-details .project .project-info .project-caption .project-caption-heading {
+  color: #222222;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+#project-details .project:hover .project-info .project-caption .project-caption-heading {
+  color: #f57d41;
+}
+
+#project-details .project .project-info .project-caption .project-caption-subheading {
+  color: #abacae;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#project-details .project .project-info ul li {
+  list-style: disc;
+  color: #abacae;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#project-details .project .project-info img {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  border-radius: .25rem !important;
+}
+
 /* ==========================================================================
    Testimonial Section Style
    ========================================================================== */
